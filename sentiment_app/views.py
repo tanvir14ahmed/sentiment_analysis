@@ -43,4 +43,4 @@ def index(request):
             post = {"sentence": sentence, "sentiment": sentiment_label}
             post_id = collection.insert_one(post).inserted_id
 
-    return render(request, 'index.html', {'sentence': sentence, 'sentiment': sentiment_label})
+    return render(request, 'sentiment_app/index.html', {'sentence': sentence, 'sentiment': sentiment_label})
